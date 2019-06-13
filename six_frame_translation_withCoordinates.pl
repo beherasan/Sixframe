@@ -1,15 +1,15 @@
 #!usr/bin/perl
 
 $outfile="Genome_sixframe.fa";
-open(IN1,"gen_code_standard_NCBI.txt") or die "Could not open the file:$!\n";
+open(CODON,"gen_code_standard_NCBI.txt") or die "Could not open the file:$!\n";
 
-while(<IN1>)
+while(<CODON>)
 {
 	chomp;
 	($c,$a)=(split /\s/)[0,1];
 	$triplet{$c}="$a";
 }
-close IN1;
+close CODON;
 
 open(IN,"Genome.fna") or die "Could not open the file:$!\n";
 open(OUT,">$outfile") or die "Could not create the file:$!\n";
