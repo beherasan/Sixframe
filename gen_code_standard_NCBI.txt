@@ -62,3 +62,4 @@ GGT G Gly
 GGC G Gly 
 GGA G Gly 
 GGG G Gly
+NNN * Ter
